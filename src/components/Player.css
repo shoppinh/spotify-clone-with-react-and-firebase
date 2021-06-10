@@ -1,3 +1,13 @@
 .player__body {
   display: flex;
 }
+.player__footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #282828;
+}

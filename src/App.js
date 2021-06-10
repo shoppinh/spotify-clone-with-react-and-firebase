@@ -26,10 +26,15 @@ function App() {
           user: user,
         });
       });
-    }
-  }, [dispatch]);
 
-  console.log("😍", token);
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playlists,
+        });
+      });
+    }
+  }, []);
 
   return (
     <div className="App">

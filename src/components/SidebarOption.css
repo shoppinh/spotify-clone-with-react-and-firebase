@@ -6,6 +6,9 @@
   height: 40px;
   transition: 200ms all ease-in;
 }
+.sidebarOption > p {
+  padding-left: 10px;
+}
 .sidebarOption:hover {
   color: white;
 }
