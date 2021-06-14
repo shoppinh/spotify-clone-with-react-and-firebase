@@ -26,15 +26,23 @@ function App() {
           user: user,
         });
       });
+      spotify.getPlaylist("3iQvDHWSS1KhyJZ4xnHzcE").then((response) => {
+        console.log(response);
+        dispatch({
+          type: "SET_SHAZAM",
+          shazam: response,
+        });
+      });
 
       spotify.getUserPlaylists().then((playlists) => {
-        dispatch({
+        console.log(playlists);
+         dispatch({
           type: "SET_PLAYLISTS",
           playlists,
         });
       });
     }
-  }, []);
+  }, [token,dispatch]);
 
   return (
     <div className="App">

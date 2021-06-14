@@ -1,11 +1,12 @@
 export const initialState = {
   user: null,
   playlists: [],
+  shazam: null,
   playing: false,
   item: null,
   //Remove after finish the projects
-  token:
-    "BQAsrPo8OZyQ3vWkkhbai-lc5Ckzu3WLk0096pXWcA_eNia_UwC45qi4bJzVcojPwUC-jSoshLHb5TGmRDOb_LvIvAPKNWi3_3-Q7TDAmlNmrw_Y_pOFW0Bs4JDiQlTHPHkwBTKFtfF2nrA-T-oTbBTVP4x7hTuY_x4Z8n23ApbfdKo",
+  //token: "BQDQNuc39B4xc3hVEFAZ7OIQKUWSmAWQB5GRG_YgsG7Stq2JU0sT0CAqi3-Pp7hy26ZEbyL0lrXalnadCLU2PRwLl8Z7mM-mNLMgY8uDgk7RUhu38QaLUlfTkCmqvos13R1zBgGIL8Uo5FVszUGCz1AwRPcnwgoqOZxU43b8vCJ39vb3",
+  token: null,
 };
 const reducer = (state, action) => {
   switch (action.type) {
@@ -24,6 +25,11 @@ const reducer = (state, action) => {
         ...state,
         playlists: action.playlists,
       };
+    case "SET_SHAZAM":
+      return {
+        ...state,
+        shazam: action.shazam,
+      }
     default:
       return state;
   }

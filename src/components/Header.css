@@ -1,0 +1,30 @@
+.header {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+}
+.header__icon {
+  font-size: 3rem !important;
+}
+.header__icon:hover {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  max-width: 300px;
+  border: 1px solid #333;
+  background-color: #040404;
+  border-radius: 25px;
+}
+.header__right > img {
+  width: 40px;
+  border-radius: 50%;
+}

@@ -15,4 +15,6 @@
 .sidebarOption__icon {
   margin-right: 5px;
   padding: 0 10px;
+  width: 3rem !important;
+  height: 3rem !important;
 }
